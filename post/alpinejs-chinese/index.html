@@ -3,7 +3,7 @@
     <meta charset="utf-8" />
 <meta name="viewport" content="width=device-width, initial-scale=1" />
 <title>Alpine.js 中文文档 | Jane&#39;s art center</title>
-<link rel="shortcut icon" href="https://lovenini.art/favicon.ico?v=1591841836384">
+<link rel="shortcut icon" href="https://lovenini.art/favicon.ico?v=1591961946920">
 <link href="https://cdn.jsdelivr.net/npm/remixicon@2.3.0/fonts/remixicon.css" rel="stylesheet">
 <link rel="stylesheet" href="https://lovenini.art/styles/main.css">
 <link rel="alternate" type="application/atom+xml" title="Alpine.js 中文文档 | Jane&#39;s art center - Atom Feed" href="https://lovenini.art/atom.xml">
@@ -24,7 +24,7 @@ Alpine.js 提供了像是 Vue 或 React 这样的大型框架的响应式或宣�
       <div class="main-content">
         <div class="site-header">
   <a href="https://lovenini.art">
-  <img class="avatar" src="https://lovenini.art/images/avatar.png?v=1591841836384" alt="">
+  <img class="avatar" src="https://lovenini.art/images/avatar.png?v=1591961946920" alt="">
   </a>
   <h1 class="site-title">
     Jane&#39;s art center
@@ -35,7 +35,7 @@ Alpine.js 提供了像是 Vue 或 React 这样的大型框架的响应式或宣�
   <div class="menu-container">
     
       
-        <a href="/" class="menu">
+        <a href="https://lovenini.art/archives" class="menu">
           首页
         </a>
       
@@ -846,6 +846,32 @@ Alpine.js 提供了像是 Vue 或 React 这样的大型框架的响应式或宣�
           </div>
         
 
+        
+          
+            <link rel="stylesheet" href="https://unpkg.com/gitalk/dist/gitalk.css">
+<script src="https://unpkg.com/gitalk/dist/gitalk.min.js"></script>
+
+<div id="gitalk-container"></div>
+
+<script>
+
+  var gitalk = new Gitalk({
+    clientID: '39d9467435e5d7b0f536',
+    clientSecret: '4f313276e687a90814344ace768e3324a7f4363c',
+    repo: 'blogdiscuss',
+    owner: 'janesart',
+    admin: ['janesart'],
+    id: (location.pathname).substring(0, 49),      // Ensure uniqueness and length less than 50
+    distractionFreeMode: false  // Facebook-like distraction free mode
+  })
+
+  gitalk.render('gitalk-container')
+
+</script>
+
+          
+
+          
         
 
         <div class="site-footer">
